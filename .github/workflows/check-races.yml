@@ -1,0 +1,39 @@
+name: Update race data and publish site
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 1 * * *' # approximately 10:17 JST; GitHub may delay scheduled jobs
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  update-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check registered official race sources
+        run: python3 update.py
+      - name: Commit verified changes if any
+        run: |
+          if git diff --quiet -- data/races.json; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/races.json
+          git commit -m "Update verified race dates from official JSON-LD"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
