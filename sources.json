@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "id": "official-soja-2027",
+      "url": "https://soja-kibijimarathon.jp/event-details/",
+      "enabled": true
+    },
+    {
+      "id": "official-tambasasayama-2027",
+      "url": "https://tambasasayama-abc-marathon.jp/outline/",
+      "enabled": true
+    },
+    {
+      "id": "official-nerima-2027",
+      "url": "https://nerima-halfmarathon.jp/outline/",
+      "enabled": true
+    }
+  ]
+}
