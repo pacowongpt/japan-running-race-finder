@@ -1,0 +1,61 @@
+{
+  "app": "Japan Race Finder",
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-05T20:56:00+09:00",
+  "races": [
+    {
+      "id": "official-soja-2027",
+      "name": "2027そうじゃ吉備路マラソン",
+      "date": "2027-02-28",
+      "location": "岡山県・総社市",
+      "type": "road",
+      "kms": [
+        5,
+        10,
+        21.0975,
+        42.195
+      ],
+      "url": "https://soja-kibijimarathon.jp/",
+      "source": "主辦方官網",
+      "verifiedAt": "2026-11-05",
+      "entryOpens": "2026-10-01",
+      "entryCloses": "2027-01-03",
+      "statusNote": "RUNNET 網上報名至 2027-01-03；可能提早額滿",
+      "sourceUrl": "https://soja-kibijimarathon.jp/event-details/"
+    },
+    {
+      "id": "official-tambasasayama-2027",
+      "name": "第47回 丹波篠山ABCマラソン",
+      "date": "2027-03-07",
+      "location": "兵庫県・丹波篠山市",
+      "type": "road",
+      "kms": [
+        42.195
+      ],
+      "url": "https://tambasasayama-abc-marathon.jp/",
+      "source": "主辦方官網",
+      "verifiedAt": "2026-11-05",
+      "entryOpens": "2026-10-01",
+      "entryCloses": "2026-12-20",
+      "statusNote": "報名情況可能因名額而變動，請以主辦方為準",
+      "sourceUrl": "https://tambasasayama-abc-marathon.jp/outline/"
+    },
+    {
+      "id": "official-nerima-2027",
+      "name": "練馬こぶしハーフマラソン2027",
+      "date": "2027-03-28",
+      "location": "東京都・練馬区",
+      "type": "road",
+      "kms": [
+        21.0975,
+        1.609
+      ],
+      "url": "https://nerima-halfmarathon.jp/",
+      "source": "主辦方官網",
+      "verifiedAt": "2026-11-05",
+      "entryOpens": "2026-11-19",
+      "statusNote": "一般半馬 11/19 20:00 起先到先得；區民先行 11/6–11/9 抽籤",
+      "sourceUrl": "https://nerima-halfmarathon.jp/outline/"
+    }
+  ]
+}
